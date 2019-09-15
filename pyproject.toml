@@ -1,0 +1,27 @@
+[tool.black]
+line-length = 99
+target-version = ['py37']
+
+[tool.poetry]
+name = "pystring-reflow"
+version = "0.1.0"
+description = "Reflow Python strings to match a specified width"
+authors = ["Joshu Coats <joshu@fearchar.net>"]
+packages = [
+  { include = "pystring_reflow", from = "src" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.scripts]
+pystring-reflow = "pystring_reflow.__main__:main"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.0"
+black = "=19.3b0"
+isort = "=4.3.21"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
