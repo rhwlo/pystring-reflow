@@ -4,7 +4,7 @@ target-version = ['py37']
 
 [tool.poetry]
 name = "pystring-reflow"
-version = "0.1.0"
+version = "0.1.1"
 description = "Reflow Python strings to match a specified width"
 authors = ["Joshu Coats <joshu@fearchar.net>"]
 packages = [

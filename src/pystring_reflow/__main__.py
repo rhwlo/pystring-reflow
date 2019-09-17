@@ -6,7 +6,7 @@ from . import reflow_text
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("-l", "--line-length", default=80)
+    parser.add_argument("-l", "--line-length", type=int, default=80)
     parser.add_argument("--diff", action="store_true")
     parser.add_argument("filename")
     args = parser.parse_args()
